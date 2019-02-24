@@ -12,7 +12,7 @@ shell:
 	docker run -it -v ${CURDIR}:${WORKDIR} ${IMG} bash
 
 
-build: 
+build:
 	docker build . -t ${IMG}
 
 
