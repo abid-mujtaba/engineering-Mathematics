@@ -4,10 +4,7 @@ IMG:=urdu-textbook
 WORKDIR:=/tmp/build		# As defined in the Dockerfile
 
 
-pdf: ${MAIN}.pdf
-
-
-${MAIN}.pdf: ${MAIN}.tex
+pdf:
 	docker run -it --user 1000:1000 -v ${CURDIR}:${WORKDIR} ${IMG} xelatex ${MAIN}
 
 
