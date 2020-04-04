@@ -16,4 +16,8 @@ build:
 	docker build . -t ${IMG}
 
 
+clean:
+	rm -f ${MAIN}.pdf ${MAIN}.aux ${MAIN}.log
+
+
 .PHONY: build shell test
