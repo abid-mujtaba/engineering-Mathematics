@@ -1,7 +1,7 @@
 MAIN:=engineeringMathematics
 
 IMG:=urdu-textbook
-WORKDIR:=/tmp/build		# As defined in the Dockerfile
+WORKDIR:=/work
 
 
 pdf:

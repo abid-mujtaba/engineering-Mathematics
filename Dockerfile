@@ -8,4 +8,8 @@ RUN apt-get -y install texlive-full
 
 COPY fonts/*.ttf /usr/share/fonts/truetype/
 
-WORKDIR /tmp/build
+COPY entry.sh /
+RUN chmod +x /entry.sh
+ENTRYPOINT ["/entry.sh"]
+
+WORKDIR /work
