@@ -16,3 +16,6 @@ WORKDIR /work
 
 # Delete unnecessary files
 RUN rm -rf /usr/share/doc/texlive-*
+
+COPY delete-fonts.sh /tmp/
+RUN bash /tmp/delete-fonts.sh
