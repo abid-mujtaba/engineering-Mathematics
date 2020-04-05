@@ -13,3 +13,6 @@ RUN chmod +x /entry.sh
 ENTRYPOINT ["/entry.sh"]
 
 WORKDIR /work
+
+# Delete unnecessary files
+RUN rm -rf /usr/share/doc/texlive-*
